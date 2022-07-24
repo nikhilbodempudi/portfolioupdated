@@ -29,10 +29,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;  
+   background:#aca99a;
+}
   </style>
 </head>
 <body>
@@ -66,10 +69,10 @@ footer {
   <h1>MY PORTFOLIO</h1>
 </div>
 
-<div class="footer">
-<footer class="container-fluid text-center">
-  <p>&copy;NIKHIL BODEMPUDI</p>
-</footer>
-</div>
+<div class="container-fluid text-center">
+        <div id="footer">
+               <p>&copy;NIKHIL BODEMPUDI</p>
+        </div>
+ </div>
 </body>
 </html>
