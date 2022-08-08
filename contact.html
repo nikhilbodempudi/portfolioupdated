@@ -1,102 +1,39 @@
-<html lang="en">
-<head>
-  <title>Nikhil portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    h2{
-        font-weight: bolder;
-        font-style: italic;
-        font-size: 52px;
-  background: -webkit-linear-gradient(rgb(51, 139, 240), rgb(77, 75, 76));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    }
-    footer {
-    background-color: #aca99a;
-      padding: 25px;
-    }
-    .jumbotron{
-      background-image: url("bg2.jpg");
-      background-repeat: repeat-x;
-    }
-  </style>
-</head>
-<body>
+ a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="port.html">My Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-       
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="Resume.html">Resume</a></li>
-        <li><a href="work.html">Assignments</a></li>
+a span{
+  position: relative;
+  z-index: 2;
+}
 
-      </ul>
-      
-    </div>
-  </div>
-</nav>
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #623f66;
+  transition: all .35s;
+}
 
-<div class="jumbotron">
-  <div class="container text-center">
-  
-    <h1 style="animation:inherit; color: rgb(163, 93, 93); font-family: fantasy ;">CONTACT ME</h1>    
-  
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h2 style="">Reach Me out at</h2><br>
-  <div class="row">
-    <div class="col-sm-9">
-      
-     <img src="call.png" height="50px" width="50px"><br><br>
-     <p style="color: rgb(207, 169, 169); font-size: 26pt;"><b>(838)900-1795</p></b>
-    </div>
-    <div class="col-sm-12"> 
-        <img src="message.png" height="50px" width="50px"><br><br>
-        <p style="color: rgb(207, 169, 169); font-size: 20pt;"><b>bodempudi.nikhil99@gmail.com</p></b>
-       </div>
-    
-  </div>
-</div><br>
+a:hover{
+  color: #fff;
+}
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-9"> 
-        <img src="map.png" height="50px" width="50px"><br><br>
-        <p style="color: rgb(207, 169, 169); font-size: 26pt;"><b>240 Manning Blvd Albany NY</p></b>
-         </div><br><br>
-    <div class="col-sm-12">
-        <img src="github.png" height="50px" width="50px"><br><br>
-        <p style="color: rgb(207, 169, 169); font-size: 26pt;"><b>nikhilbodempudi</p></b>
-       </div>
-    </div>
-  </div>
-</div><br><br>
-
-<footer class="container-fluid text-center">
-    <p>&copy;NIKHIL BODEMPUDI</p>
-  </footer>
-
-</body>
-</html>
+a:hover:after{
+  width: 100%;
+}
