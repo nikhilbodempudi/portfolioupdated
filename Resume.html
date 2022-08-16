@@ -15,19 +15,14 @@
       background-image: url("565jpg.jpg");
       background-repeat: repeat-x;
     }
-    .wrapper{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.wrapper2{
-  position: fixed;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-a{
+    .nav>li{
+      padding:10px 30px;
+    }
+    
+    .navbar-brand{
+      padding-top:24%;
+    }
+    .wrapper>a{
   display: block;
   width: 200px;
   height: 40px;
@@ -43,29 +38,43 @@ a{
   transition: all .35s;
 }
 
-a span{
+.wrapper>a span{
   position: relative;
   z-index: 2;
 }
 
-a:after{
+.wrapper>a:after{
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: #252425;
+  background: #623f66;
   transition: all .35s;
 }
 
-a:hover{
+.wrapper>a:hover{
   color: #fff;
 }
 
-a:hover:after{
+.wrapper>a:hover:after{
   width: 100%;
 }
+    .wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper2{
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -111,10 +120,9 @@ footer {
   </div>
 </div>
 <div class="wrapper">
-    <a href="resume1.pdf"><span>RESUME</span></a>
-  </div>
-  <div class="wrapper2">
-    <a href="cover.pdf"><span>COVER</span></a>
+    <a href="resume1.pdf">RESUME</a>
+ <br><br><br>
+    <a href="cover.pdf">COVER</a>
   </div>
 </div>
 
