@@ -7,59 +7,48 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-      
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
+    .jumbotron{
+      background-image: url("bg1.jpg");
+      background-repeat: repeat-x;
+    }
     .nav>li{
       padding:10px 30px;
-    } 
+    }
+    
     .navbar-brand{
       padding-top:24%;
     }
-    .wrapper>a{
-  display: block;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #333;
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-}
-   
+ .wrapper>ul>li{
+   display: block;
+   padding:10px 20px;
+   border: 2px solid rgb(116, 98, 128);
+   width:200px;
+   margin-bottom:5px;
+   background-color: rgb(91, 72, 104);
+ }
+ .wrapper{
+   text-align: center;
+ }
+ .wrapper>ul{
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+ }
+ .wrapper>ul>li>a{
+text-decoration: none;
+color:white;
 
-.wrapper>a span{
-  position: relative;
-  z-index: 2;
-}
+ }
+ .wrapper>ul>li:hover{
+background-color:rgb(45, 28, 56);
 
-.wrapper>a:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #623f66;
-  transition: all .35s;
-}
+ }
+ 
 
-.wrapper>a:hover{
-  color: #fff;
-}
-
-.wrapper>a:hover:after{
-  width: 100%;
-}
-
-    
 footer {
     position: absolute;
     bottom: 0;
@@ -67,10 +56,7 @@ footer {
     background-color: #aca99a;
     padding: 35px;
     }
-    .jumbotron{
-      background-image: url("bg1.jpg");
-      background-repeat: repeat-x;
-    }
+    
   </style>
 </head>
 <body>
@@ -103,45 +89,24 @@ footer {
 <div class="jumbotron">
   <div class="container text-center">
   
-    <h1 style="animation:inherit; color: rgb(99, 66, 121); font-family: fantasy ;">Assignments</h1>    
+    <h1 style="animation:inherit; color: rgb(45, 28, 56); font-family: fantasy ;">ASSIGNMENTS</h1>    
   
   </div>
 </div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <a href="week3.html"><span>Week 3</span></a>
+<div class="wrapper">
+<ul>
+    <li><a href="week3.html">WEEK 3</a></li>
+   <li> <a href="week4.html">WEEK 4</a></li>
+   <li><a href="week5.html">WEEK 5</a></li>
+   <li> <a href="week6.html">WEEK 6</a></li>
+  </ul>
 
-    </div>
-    <div class="col-sm-3"> 
-      <a href="week4.html"><span>Week 4</span></a>
-    </div>
-    <div class="col-sm-3"> 
-      <a href="week5.html"><span>Week 5</span></a>
-    </div>
-    <div class="col-sm-3">
-      <a href="week3.html"><span>Week 6</span></a>
-    </div>
-  </div>
-</div><br>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-  
-    <div class="col-sm-3"> 
-      <a href="Resumenik.pdf"><span>Resume</span></a>
-    </div>
-    <div class="col-sm-3"> 
-      <a href="cover1.pdf"><span>Cover Letter</span></a>
-    
-    
-
-  </div>
+</div>
 
 <footer class="container-fluid text-center">
-    <p>&copy;NIKHIL BODEMPUDI</p>
-  </footer>
+  <p>&copy;NIKHIL BODEMPUDI</p>
+</footer>
 
 </body>
 </html>
